@@ -1,5 +1,10 @@
 package sort
 
+// |				Time Complexity			 	| Scpace Complexity |
+// |--------------------------------------------|-------------------|
+// |	Best		|	Average		|	Worst	| 		Worst		|
+// |	Ω(n log(n))	|	Θ(n log(n))	|	O(n^2)	|		O(log(n))	|
+
 func Qsort[T any](a []T, com func(T, T) bool) {
 	if len(a) < 2 {
 		return
